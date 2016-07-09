@@ -1,0 +1,160 @@
+{
+    "_id": "2",
+    "name": "GTC16'",
+    "fullname": "GeekyTeen Conference 2016",
+    "chn_name": "第二届青少年极客大会",
+    "venues": {
+        "main": {
+            "country": {
+                "code": "prc",
+                "display": "China"
+            },
+            "province": {
+                "code": "fj",
+                "display": "Fujian"
+            },
+            "city": {
+                "code": "xm",
+                "display": "Xiamen"
+            },
+            "address": "Xiamen University (Amoy University)"
+        },
+        "linking": [{
+            "Jinhua": {
+                "country": {
+                    "code": "prc",
+                    "display": "China"
+                },
+                "province": {
+                    "code": "zj",
+                    "display": "Zhejiang"
+                },
+                "city": {
+                    "code": "jh",
+                    "display": "Jinhua"
+                },
+                "address": "The Affiliated High School of Zhejiang Normal University"
+            }
+        }],
+        "cyberspace": "Internet"
+    },
+    "date": {
+        "year": 2016,
+        "month": 7,
+        "day": [14, 15]
+    },
+    "labs": [{
+        "sessionId": 102,
+        "name": "Rust Lab",
+        "speakers": ["Liqueur Librazy"],
+        "description": "Rust 是一门由 Mozilla 推出的一门系统编程语言，主旨是内存安全、并发与速度。Rust 号称是 C++的有力竞争对手，可以简化开发，避免 Bug，提高效率。是什么给了 Rust 这样的能力呢？它相比 C/C++、Java、Go 的优势与不足有什么？《Rust Primer》是一本Rust的高质量中文入门书，它的编写过程又是如何，该如何正确的使用？",
+        "time": {
+            "begin": "2016-07-14 10:15 CST",
+            "end": "2016-07-14 11:30 CST"
+        }
+    }, {
+        "sessionId": 104,
+        "name": "Crack Lab",
+        "speakers": ["Dr.thril"],
+        "description": "用了各种“破解版”“注册机”却不知道它们是怎么来的？也不知道注册机里魔性的音乐到底是什么？以前总是听说0Day啊什么的，这到底是个什么东西？该怎么玩儿？",
+        "time": {
+            "begin": "2016-07-14 14:45 CST",
+            "end": "2016-07-14 16:15 CST"
+        }
+    }, {
+        "sessionId": 201,
+        "name": "Meteor Lab",
+        "speakers": ["Wexpo Lyu"],
+        "description": "Meteor 是基于 Node.js 的一个方便 Web 应用构建的技术（而不是流星），那么这到底是怎样的一种技术呢？Meteor 有怎样的未来呢？这又有什么好处和缺点呢？怎样使用Meteor构建应用？",
+        "time": {
+            "begin": "2016-07-15 09:30 CST",
+            "end": "2016-07-15 11:30 CST"
+        }
+    }, {
+        "sessionId": 202,
+        "name": "Docker Lab",
+        "speakers": ["孙宏亮"],
+        "description": "Docker 是一个开源容器引擎，移植方便，那么什么是容器？如何用容器来构建与发布应用呢？Docker 又可以应用在哪些方面呢？DaoCloud 是目前国内提供Docker容器云的明星企业，怎么与 DaoCloud 愉快地玩耍？",
+        "time": {
+            "begin": "2016-07-15 13:30 CST",
+            "end": "2016-07-15 15:00 CST"
+        }
+    }],
+    "speakers": [{
+        "name": "Liqueur Librazy",
+        "description": "《Rust Primer》贡献者之一"
+    }, {
+        "name": "Dr.thril",
+        "description": ""
+    }, {
+        "name": "Wexpo Lyu",
+        "description": "Meteor Contributor 之一"
+    }, {
+        "name": "孙宏亮",
+        "description": "DaoCloud 工程师"
+    }],
+    "sessions": [{
+        "sessionId": 100,
+        "title": "入场",
+        "time": {
+            "start": "2016-07-14 07:45 CST",
+            "end": "2016-07-14 09:15 CST"
+        }
+    }, {
+        "sessionId": 101,
+        "title": "Theme Speech",
+        "time": {
+            "start": "2016-07-14 09:15 CST",
+            "end": "2016-07-14 10:00 CST"
+        }
+    }, {
+        "sessionId": 102,
+        "title": "Rust Lab",
+        "time": {
+            "start": "2016-07-14 10:15 CST",
+            "end": "2016-07-14 11:30 CST"
+        }
+    }, {
+        "sessionId": 103,
+        "title": "Lightning Talk 103",
+        "time": {
+            "start": "2016-07-14 13:30 CST",
+            "end": "2016-07-14 14:30 CST"
+        }
+    }, {
+        "sessionId": 104,
+        "title": "Crack Lab",
+        "time": {
+            "start": "2016-07-14 14:45 CST",
+            "end": "2016-07-14 16:15 CST"
+        }
+    }, {
+        "sessionId": 105,
+        "title": "After Dark",
+        "time": {
+            "start": "2016-07-14 19:00 CST",
+            "end": "2016-07-14 22:00 CST"
+        }
+    }, {
+        "sessionId": 201,
+        "title": "Meteor Lab",
+        "time": {
+            "start": "2016-07-15 09:30 CST",
+            "end": "2016-07-15 11:30 CST"
+        }
+    }, {
+        "sessionId": 202,
+        "title": "Docker Lab",
+        "time": {
+            "start": "2016-07-15 13:30 CST",
+            "end": "2016-07-15 15:00 CST"
+        }
+    }, {
+        "sessionId": 203,
+        "title": "Lightning Talk 203",
+        "time": {
+            "start": "2016-07-15 15:00 CST",
+            "end": "2016-07-15 16:30 CST"
+        }
+    }],
+}

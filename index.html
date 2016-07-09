@@ -1,0 +1,71 @@
+
+<html>
+ <head>
+  <title>GTC16</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+  <style>
+   body {font-family:"PT Mono", monospace; text-align:center; max-width:700px; margin:0 auto;}
+   h1::before {content:"# ";}
+   h2::before {content:"## ";}
+   h3::before {content:"### ";}
+   h4::before {content:"#### ";}
+   code.sh-cmd::before {content:"$ ";}
+   code {font-family:"PT Mono", monospace; background:#333; color:#fff; line-height:1.5em; padding:0 .5em; border-radius:3px;}
+   .terminal samp {display:block; font-family:"PT Mono", monospace; text-align:left; min-height:300px; background:#333; color:#fff; word-break:break-all; word-wrap:break-word;}
+   i.eof {font-style:normal; background:#fff; color:#333;}
+  </style>
+ </head>
+ <body>
+  <h1>GTC16</h1>
+  <p>More to go, much to do.</p>
+  <p>July 2016, Xiamen, China.</p>
+  <p>`<code class="sh-cmd">curl https://www.geekyteen.cn/gtc16.json</code>` to get more info about GeekyTeen Conference 2016.</p>
+  <p>Or click <b>Terminal</b> to see it on web.</p>
+  <h2>Participating</h2>
+  <p>[Sign Up Now](<a href="http://www.huodongxing.com/go/gtc16">http://www.huodongxing.com/go/gtc16</a>)</p>
+  <p>[Hold a Lab](<a href="https://www.wenjuan.com/s/R3ENri9/">https://www.wenjuan.com/s/R3ENri9/</a>)</p>
+  <p>[Organize a Local Branch](<a href="https://www.wenjuan.com/s/7z67j2/">https://www.wenjuan.com/s/7z67j2/</a>)</p>
+  <details class="terminal">
+   <summary>Terminal</summary>
+   <samp>curl: Looks like your browser doesn't support ES6 or even JavaScript natively. Try another one or do curl yourself.</samp>
+  </details>
+  <p>Copyright 2015-2016 [UnitedHubs](<a href="http://unihubs.com">http://unihubs.com</a>).</p>
+  <p style="display: none;">There goes some gift cards for your VividCloud Account. Redeem them on my.vvd.space. </p>
+  <pre style="display: none;">["yoEmZkAu9LHfih2Qt", "4oZ5Aa6aziW3cwAei", "noic5m49pCi3BxxS9", "cNEffsJDbZxmnj5tg", "xakGeCdWH2eAFio2f"]</pre>
+  <script src="//cdn.bootcss.com/jquery/3.0.0-rc1/jquery.min.js"></script>
+  <script>
+   // When programming this site, we use everything radically. So you must use a browser supporting pure ES6.
+   'use strict';
+   const targetUrl = 'https://www.geekyteen.cn/gtc16.json';
+   const Print = str => $('.terminal>samp').append(str + '<br>');
+   const Clear = () => $('.terminal>samp').html('');
+   let JSONReturned = false;
+   $(document).ajaxError((e, j, s, err) => Print(`curl: ERR ${err.toString()}`));
+   const jobFetchJSON = () => {
+       Clear();
+       JSONReturned = false;
+       let jobId = Math.random().toString(36).substr(2);
+       Print(`Setting up job ${jobId}...`);
+       if(Math.random()>0.5){
+           Print(`Job ${jobId} failed to set up.`);
+           Print('Soha will invite everyone on board to have a dinner together. Remind him if you see this.');
+           Print('Feel free to press any key to rerun the job.');
+           return;
+       }
+       Print(`Job ${jobId} set. Ready to run.`);
+       Print(`Job ${jobId} is running...`);
+       Print(`Executing "curl ${targetUrl}"...`);
+       $.get(targetUrl, data => {
+           if(JSONReturned){return;}
+           JSONReturned = true;
+           Print(`${data.replace(/\n/g, '<br>').replace(/ /g, '&nbsp;')}<i class="eof">%</i>`);
+           Print(`Job ${jobId} done.`);
+           Print('Press any key to rerun the job.');
+       }, 'text');
+   };
+   Clear();
+   $(document).on('keydown', jobFetchJSON);
+   Print(`Press any key to run the job "curl ${targetUrl}"...`);
+  </script>
+ </body>
+</html>
